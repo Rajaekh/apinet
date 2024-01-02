@@ -55,18 +55,7 @@ namespace LesApi.Controllers
             return transferModels;
         }
         // Helper method to get beneficiary full name
-        string GetBeneficiaireFullName(string beneficiaireId)
-        {
-            var beneficiaire = _beneficiaire.GetBeneficiaireById(beneficiaireId);
-            return beneficiaire != null ? beneficiaire.Prenom + " " + beneficiaire.Nom : "N/A";
-        }
-
-        // Helper method to get user full name
-        string GetUserFullName(string userId)
-        {
-            var user = _user.GetUserById(userId);
-            return user != null ? user.Lastname + " " + user.Name : "N/A";
-        }
+       
         [HttpGet("{transfertId}")]
         public ActionResult<TransferModel> GetTransfertById(string transfertId)
         {
@@ -195,7 +184,18 @@ namespace LesApi.Controllers
             return BadRequest(new { error = "Les informations de transfert sont invalides." });
         }
 
+        string GetBeneficiaireFullName(string beneficiaireId)
+        {
+            var beneficiaire = _beneficiaire.GetBeneficiaireById(beneficiaireId);
+            return beneficiaire != null ? beneficiaire.Prenom + " " + beneficiaire.Nom : "N/A";
+        }
 
+        // Helper method to get user full name
+        string GetUserFullName(string userId)
+        {
+            var user = _user.GetUserById(userId);
+            return user != null ? user.Lastname + " " + user.Name : "N/A";
+        }
 
     }
 }
