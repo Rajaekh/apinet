@@ -271,12 +271,12 @@ namespace LesApi.Controllers
            
             if (transferModel.Status.Equals("Restitué") || transferModel.Status.Equals("Extourné"))
             {
-                htmlContent += "<p>Le motif de restitution" +transferModel.MotifRestitution+""+ transferModel.AutreMotif + " </p>";
+                htmlContent += "<p>Le motif de restitution:" +transferModel.MotifRestitution+""+ transferModel.AutreMotif + " </p>";
             }
 
             if (transferModel.Status.Equals("Bloqué"))
             {
-                htmlContent += "<p>Le motif de Bloquage" + transferModel.MotifBlicage + "" + transferModel.AutreMotif + " </p>";
+                htmlContent += "<p>Le motif de Bloquage:" + transferModel.MotifBlicage + "" + transferModel.AutreMotif + " </p>";
             }
 
 
