@@ -90,3 +90,9 @@ C:\Users\rajae\Desktop\PFE\TransfertAngular\API\LesApi\LesApi\obj\Debug\net7.0\r
 C:\Users\rajae\Desktop\PFE\TransfertAngular\API\LesApi\LesApi\obj\Debug\net7.0\LesApi.pdb
 C:\Users\rajae\Desktop\PFE\TransfertAngular\API\LesApi\LesApi\obj\Debug\net7.0\LesApi.genruntimeconfig.cache
 C:\Users\rajae\Desktop\PFE\TransfertAngular\API\LesApi\LesApi\obj\Debug\net7.0\ref\LesApi.dll
+C:\Users\rajae\Desktop\PFE\TransfertAngular\API\LesApi\LesApi\bin\Debug\net7.0\PdfSharpCore.dll
+C:\Users\rajae\Desktop\PFE\TransfertAngular\API\LesApi\LesApi\bin\Debug\net7.0\HtmlRenderer.Core.dll
+C:\Users\rajae\Desktop\PFE\TransfertAngular\API\LesApi\LesApi\bin\Debug\net7.0\HtmlRenderer.PdfSharp.Core.dll
+C:\Users\rajae\Desktop\PFE\TransfertAngular\API\LesApi\LesApi\bin\Debug\net7.0\SixLabors.Core.dll
+C:\Users\rajae\Desktop\PFE\TransfertAngular\API\LesApi\LesApi\bin\Debug\net7.0\SixLabors.Fonts.dll
+C:\Users\rajae\Desktop\PFE\TransfertAngular\API\LesApi\LesApi\bin\Debug\net7.0\SixLabors.ImageSharp.dll

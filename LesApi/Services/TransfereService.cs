@@ -173,5 +173,40 @@ namespace LesApi.Services
             return ObjectId.TryParse(id, out _);
         }
 
+        // pour generer Reference de Transfert;
+        public  string GenererNumeroUnique()
+        {
+            Random rand = new Random();
+
+            // Générer un nombre aléatoire de 14 chiffres
+            int nombreAleatoire = rand.Next(100000000, 999999999);
+
+            // Concaténer avec "EDP837"
+            string numeroUnique = "EDP837" + nombreAleatoire.ToString();
+
+            return numeroUnique;
+        }
+
+        public Transfert GetTransfertReference(string reference)
+        {
+            if (reference == null )
+            {
+                return null;
+            }
+            // Utilisez la méthode Find pour obtenir le transfert avec l'ID spécifié
+            var transfert = _transfert.Find(t => t.Reference == reference).FirstOrDefault();
+
+            // Vérifiez si le transfert a été trouvé
+            if (transfert != null)
+            {
+                return transfert;
+            }
+            else
+            {
+                // Si le transfert n'est pas trouvé, vous pouvez choisir de lever une exception, de retourner null, ou de gérer d'une autre manière.
+                // Dans cet exemple, nous retournons null.
+                return null;
+            }
+        }
     }
 }

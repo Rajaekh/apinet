@@ -13,6 +13,7 @@
             public double? ValFrais { get; set; }
             public string MotifsTransfert { get; set; }
             public DateTime DataeTransfert { get; set; }
+            public DateTime DataeExpiration { get; set; }
             public double Montant { get; set; }
             public string NomBeneficiaire { get; set; }
             public string NomClient { get; set; }
@@ -21,6 +22,7 @@
             public string? MotifRestitution { get; set; }
             public string? MotifBlicage { get; set; }
             public string? AutreMotif { get; set; }
+           public string? Reference { get; set; }
 
     }
 }

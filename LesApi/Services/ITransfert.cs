@@ -9,5 +9,7 @@ namespace LesApi.Services
         List<Transfert> GetallTransfert();
         Transfert GetTransfertById(string id);
         Transfert EditTransfertStatus(string id, TransferModel trans);
+        Transfert GetTransfertReference(string reference);
+        public string GenererNumeroUnique();
     }
 }

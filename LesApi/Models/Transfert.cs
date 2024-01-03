@@ -51,6 +51,12 @@ namespace LesApi.Models
         public string? AutreMotif { get; set; }
         [BsonElement("motifBlicage")]
         public string? MotifBlicage { get; set; }
+        [BsonElement("reference")]
+        public string? Reference { get; set; }
 
+        public static implicit operator string(Transfert v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
